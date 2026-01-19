@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a class="skip-link" href="#main">メインへスキップ</a>
+    <a class="skip-link" href="#main">Skip to Main</a>
     <!-- Header -->
     <header class="site-header">
         <div class="container nav">
@@ -16,7 +16,7 @@
           <ul id="menu" class="menu" aria-label="main-navigation">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#notes">Notes</a></li>
+            <!-- <li><a href="#notes">Notes</a></li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -26,7 +26,7 @@
 
         <!-- Hero -->
         <section class="hero container">
-            <h1>Hi, I’m Kasumi — Junior Web Developer in trainig</h1>
+            <h1>Hi, I’m Kasumi — Junior Web Developer in training</h1>
             <p>I create websites that prioritize usability and readability.</p>
             <div class="actions">
               <a class="btn" href="#projects">See my projects</a>
@@ -44,7 +44,9 @@
             </p>
             <div class="tags">
             <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
-            <span class="tag">Python</span><span class="tag">SQL</span>
+            <span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Kotlin</span>
+            <span class="tag">Figma</span><span class="tag">UI & UX</span><span class="tag">Agile</span>
+            <span class="tag">pfSence</span><span class="tag">GitHub</span>
             </div>
         </section>
 
@@ -73,14 +75,14 @@
                   </a>
             </article>
     
-            <article class="card">
+            <!-- <article class="card">
                 <h3>Weather App</h3>
                 <p>天気APIを使用した検索アプリ。</p>
                 <a class="cta" href="#">Live Demo</a>
                 <a class="cta" href="#" target="_blank">
                     View Code
                   </a>
-            </article>
+            </article> -->
 
             <article class="card">
                 <h3>ToDo List</h3>
@@ -94,26 +96,34 @@
 
         </section>
 
-        <!-- Notes -->
-        <section id="notes" class="container">
-            <h2>Notes</h2>
-            <ul class="notes">
-            <li><a href="#">Grid と Flex の使い分け</a></li>
-            <li><a href="#">Fetch API の基本</a></li>
-            </ul>
-        </section>
-    
         <!-- Contact -->
-        <section id="contact" class="container">
-            <h2>Contact</h2>
-            <form class="contact-form">
-            <label>お名前<input name="name" required /></label>
-            <label>メールアドレス<input type="email" name="email" required /></label>
-            <label>メッセージ<textarea name="message" rows="4"></textarea></label>
-            <button type="submit">送信（デモ）</button>
-            <p class="result" aria-live="polite"></p>
+        <div id="contact-container">
+        <section id="contact">
+            <h2 id="contactHeader">Contact Form</h2>
+          
+            <form action="https://formspree.io/f/mnjjdqby" method="POST">
+              <label>
+                Name
+                <input type="text" name="name" required>
+              </label>
+          
+              <label>
+                Email
+                <input type="email" name="email" required>
+              </label>
+          
+              <label>
+                Message
+                <textarea name="message" rows="6" required></textarea>
+              </label>
+          
+              <!-- spam protection -->
+              <input type="text" name="_gotcha" style="display:none">
+          
+              <button type="submit">Send</button>
             </form>
-        </section>
+          </section>
+         
 
     </main>
     <!-- Footer -->
