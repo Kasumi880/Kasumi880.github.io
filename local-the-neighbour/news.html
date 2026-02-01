@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local the Neighbour</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    </head>
+    
+    <!-- Navigation Menu (laptop display) -->
+    <body class="index">
+        <header class="header">
+            <h1><a href="./index.html">Local the Neighbour</a></h1>
+            <nav class="navigationBar">
+                <ul class="menu">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./live.html">Live</a></li>
+                    <li><a href="./musicVideo.html">Music Video</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    <!-- Navigation Menu (mobile and tablet display)(W3school　2025)-->
+        <div class="mobilenavi">
+            <a href="./index.html" class="mobiletitle">Local the Neighbour</a>
+            <div id="mobileMenu">
+                <a href ="./about.html">About</a>
+                <a href ="./news.html">News</a>
+                <a href ="./live.html">Live</a>
+                <a href ="./musicVideo.html">Music Video</a>
+                <a href ="./contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="music-note-icon" onclick="mNaviDisplay()">
+                <i class="fa fa-music"></i>
+            </a>
+        </div>
+    <!--Main section-->
+    <section>
+        <div class="main_latest">
+            <h2>- News -</h2>
+            <p><a href="#newGig" class="text-link">31/08/2025 New Gig- Sore House</a></p>
+            <p><a href="#newVideo"class="text-link">17/03/2025 New Video - Local the Neighbour's Rolling Stone AU/NZ 'In My Room' Session</a></p>
+        </div>
+    </section>
+    <hr>
+    
+    <!-- Submain section1 -->
+    </section>
+        <div id="newGig"class="submain_latest gig_section">
+            <img src="./assets/info_sore.jpg" alt="Ads for Sore Horse">
+            <img src="./assets/info_pizzas.jpg" alt="Ads for Sore Horse2">
+        </div> 
+        <div class="submain_latest text_section">
+            <h3>-Sore horse festival-<h3>
+                <p>Date: 12th sept from 6pm<p>
+                <p>Place: Primo Street Pizza<p>
+                <p>Buy tickets here<p>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Submain section2 -->
+    <section>
+    <div id="newVideo" class="submain_latest video_section">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a2-q44hyMV8?si=DFmcdDC29zv1yToV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>  
+        <div class="submain_latest text_section">
+            <h3>-Local the Neighbour's Rolling Stone AU/NZ 'In My Room' Session-<h3>
+                <p>Watch the full 'In My Room' session now!<p>  
+        </div>
+    </section>
+
+    <footer>
+        <small>©︎ 2025 Local the Neighbour All right reserved.</small>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local the Neighbour</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    </head>
+    
+    <!-- Navigation Menu (laptop display) -->
+    <body class="index">
+        <header class="header">
+            <h1><a href="./index.html">Local the Neighbour</a></h1>
+            <nav class="navigationBar">
+                <ul class="menu">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./live.html">Live</a></li>
+                    <li><a href="./musicVideo.html">Music Video</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    <!-- Navigation Menu (mobile and tablet display)(W3school　2025)-->
+        <div class="mobilenavi">
+            <a href="./index.html" class="mobiletitle">Local the Neighbour</a>
+            <div id="mobileMenu">
+                <a href ="./about.html">About</a>
+                <a href ="./news.html">News</a>
+                <a href ="./live.html">Live</a>
+                <a href ="./musicVideo.html">Music Video</a>
+                <a href ="./contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="music-note-icon" onclick="mNaviDisplay()">
+                <i class="fa fa-music"></i>
+            </a>
+        </div>
+
+    <!--contact form-->
+    <section class="contact-main">
+        <h2>- Contact Form -</h2>
+        <p>Please contact us through the inquiry.</p>
+        <form id= "contactpageForm"class="contact-form">
+            <div class="contact-form-item">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+            </div>
+            <div class="contact-form-item">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+            </div>
+            <div class="contact-form-item">
+                <label for="pnumber">Phone Number</label>
+                <input type="tel" id="pnumber" name="pnumber" pattern="[0-9]{10}" title= "type ten-digit number" required><br><br>
+            </div>
+            <div class="contact-form-item">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+            <div class="contact-form-item message">
+                <label for="message">Message</label>
+                <textarea type="text" id="message" name="message" rows="20" required></textarea><br><br>
+            </div>
+            <input class="submit-btn" type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <small>©︎ 2025 Local the Neighbour All right reserved.</small>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

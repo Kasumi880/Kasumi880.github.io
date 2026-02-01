@@ -1,0 +1,415 @@
+
+/* Mutural */
+html, body {
+    margin: 0;
+    padding: 60px 5px 5px;
+    background-color: black;
+    color: #fff;
+}
+html.index,
+body.index {
+    margin: 0;
+    padding: 0;
+}
+
+
+h2{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-link{
+    color: royalblue;
+}
+
+.text-link:hover{
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+/* Global header (web display)*/
+.header{
+    position: fixed;
+    top: 0; left: 0; right:0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 16px 24px;
+    z-index: 10;} /*this is top of other elements*/
+
+/* header title (web display) */
+.header h1{
+    color: white;
+    padding-left: 14px;
+    padding-top: 0;
+    margin: 0;
+    font-size: 3rem;
+    white-space: nowrap;
+}
+@media (min-width: 319px) and (max-width: 480px){
+    .header h1{font-size: 1.5rem; }
+}
+
+@media (min-width: 481px) and (max-width: 1200px){
+    .header h1{font-size: 2rem; }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px){
+    .header h1{font-size: 3rem; }
+}
+
+/* Navigation Menu (web display) */
+.menu{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    overflow: visible;
+    display: flex;
+    justify-content: flex-end; 
+    gap: .5rem;   
+}
+
+.menu a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+}
+
+.menu li:hover > a{
+    border-radius: 5px;
+    outline: 1px solid #fff;
+    outline-offset: 1px;
+
+}
+
+/* Global header (mobile/tablet display)*/
+.mobilenavi{
+    display: none;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+
+}
+
+.mobilenavi #mobileMenu{
+    display: none;
+}
+.mobilenavi a{
+ color: #fff;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ display: block;
+}
+
+.mobilenavi a.music-note-icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.mobilenavi a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.mobiletitle{
+    background-color:black;
+    color: #fff;
+}
+
+.mobilenavi{
+    display: none;
+}
+
+@media(max-width:1200px){
+    .header{
+        display: none;
+    }
+    .mobilenavi{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+    }
+}
+
+/* Picture (home screen top) */
+.homeVisual{
+    width: 100%;
+    overflow: hidden;
+}
+.homeVisual img{
+    width: 100%;
+    height: auto;
+}
+
+/* icon */
+.sns-icon{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.sns-icon img{
+    width: 48px;
+    height: auto;
+}
+/* About section (home page buttom/ about page) */
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    margin: 80px 60px 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.intro{
+    font-size: 18px;
+    color: #fff;
+}
+
+.introImag {
+    margin-left: 0;
+    width: 32%;
+    height: auto;
+}
+.introImag img{
+    width: 100%;
+    height: auto;
+}
+
+.intro .text-link{
+    margin-top: 16px;
+}
+
+/* Responsive about section (home page buttom/ about page) */
+@media (max-width: 1200px){
+    .container{
+        flex-direction: column;
+        margin: 24px;
+    }
+    .container 
+    .intro{ order:1;
+        width: 80%;
+        font-size: 18px;}
+
+    .container
+    .introImag{order:2;
+        width: 80%;}
+
+    .introImag img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* News page*/
+.main_latest{
+    margin: 80px;
+    font-size: 18px;
+}
+
+.main_latest h2{
+    text-align: center;
+}
+
+.submain_latest.gig_section{
+    display: flex;
+    width:  100%;
+    height: auto;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+hr{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+.submain_latest.gig_section img{
+    width: 300px;
+    height: auto;
+}
+.submain_latest.text_section{
+    margin-bottom: 50px;
+}
+.submain_latest.text_section p{
+ color: gray;
+ font-size: medium;
+ 
+}
+
+.submain_latest{
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.submain_latest.video_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/* Live page*/
+.live-main{
+    margin-top: 80px;
+}
+
+.live_list{
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    list-style: none;
+    font-size: 2rem;
+    margin: 40px; 
+
+}
+
+.live_list li{
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border: 1px solid white;    
+}
+
+.live_list .live-item-label{
+    margin-right: 24px;
+}
+
+.live-item-status{
+    margin-left: 24px;
+    color: red;
+}
+
+@media (min-width: 319px) and (max-width: 480px){
+    .live_list li{
+        font-size: 0.5rem; 
+        padding: 4px;
+        margin: 4px;
+    }
+    .live_list 
+    .live-item-label{
+        margin-right: 4px;
+    }
+    
+    .live-item-status{
+        margin-left: 4px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px){
+    .live_list li{
+        font-size: 1rem; 
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px){
+    .live_list li{font-size: 2rem; }
+}
+
+/* Music Video page*/
+.music-title{
+    margin: 80px 0px 60px;
+}
+.containerVideo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    /* margin: 60px; */
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+.musicVideoR,
+.musicVideoL {
+    margin-left: 0;
+    width: 320px;
+    height: auto;
+}
+.musicVideoR img,
+.musicVideoL img{
+    width: 100%;
+    height: auto;
+}
+
+
+.frame {
+    border: 1px solid rgb(51, 230, 224);
+}
+
+@media (min-width: 319px) and (max-width: 480px){
+    .musicVideoR,
+    .musicVideoL{
+    width: 240px;
+    height: auto; }
+    .musicVideoL p,
+    .musicVideoR p
+    {
+        font-size: 16px;
+    }
+}
+
+
+/* Contact page */
+
+.contact-main {
+    text-align: center;
+    margin-top: 80px;
+}
+.contact-form{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+.contact-form-item{
+    display: flex;
+    gap: 12px;
+    margin: 8px 0;
+}
+
+label{
+    width: 200px;
+
+}
+input,
+textarea{
+    width: 100%;
+}
+
+
+.submit-btn{
+    display: block;
+    width: 60px;
+    margin: 16px auto 0;
+}
