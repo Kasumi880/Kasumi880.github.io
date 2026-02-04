@@ -1,7 +1,7 @@
-// 年を自動更新
+// Autimatically update age
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// ナビ開閉
+// Navigation opening/ Closing
 const toggle = document.querySelector('.nav-toggle');
 const menu = document.getElementById('menu');
 if(toggle){
@@ -12,7 +12,7 @@ if(toggle){
   });
 }
 
-// デモ送信メッセージ
+// Demo sending message
 const form = document.querySelector('.contact-form');
 form.addEventListener('submit', (e)=>{
   e.preventDefault();
