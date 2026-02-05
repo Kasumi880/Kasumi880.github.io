@@ -67,7 +67,7 @@ form{ display:grid;
       margin: 0 auto;}
 #contactHeader{ text-align: center;}
 input, textarea{ border:1px solid var(--line); padding:.6rem; border-radius:.4rem; }
-button{ padding:.6rem 1rem; background:var(--brand); border:none; color:white; cursor:pointer; }
+button{ padding:.6rem 1rem; background:var(--brand); border:none; color:#d95c8f; cursor:pointer; }
 
 form label{
   display: flex;
